@@ -1,0 +1,14 @@
+.track-company-input-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.track-company-input {
+    @include input-mixin;
+}
+
+.track-company-button {
+    width: 10em;
+    margin-left: 2em;
+}

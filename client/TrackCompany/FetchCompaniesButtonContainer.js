@@ -8,7 +8,7 @@ const { fetchCompanies } = actions;
 
 const mapStateToProps = state => ({
     companyName: state.trackCompany.companyName,
-    className: '',
+    className: 'track-company-button',
     text: messages.trackCompany.trackCompanyButton,
     isPrimary: true,
     shouldRender: Boolean(state.trackCompany.companyName)
