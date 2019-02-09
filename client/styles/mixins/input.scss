@@ -1,0 +1,5 @@
+@mixin input-mixin {
+    @include font-oswald(16px, $color-black, 400);
+    @include shadow-mixin;
+    max-width: 50em;
+}

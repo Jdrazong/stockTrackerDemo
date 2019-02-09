@@ -1,0 +1,39 @@
+{
+    "extends": "airbnb",
+    "parser": "babel-eslint",
+    "rules": {
+        "func-names": ["error", "never"],
+        "linebreak-style": 0,
+        "indent": ["error", 4],
+        "react/jsx-indent": ["error", 4],
+        "comma-dangle": ["error", "never"],
+        "import/no-unresolved": "off",
+        "import/prefer-default-export": 0,
+        "max-len": [2, 160, 4],
+        "react/destructuring-assignment": 0,
+        "jsx-a11y/label-has-for": [ 2, {
+            "components": [ "Label" ],
+            "required": {
+                "some": [ "nesting", "id" ]
+            },
+            "allowChildren": false
+        }],
+        "react/jsx-indent-props": [true, 4],
+        "jsx-a11y/no-noninteractive-element-interactions": "off",
+        "jsx-a11y/click-events-have-key-events": "off",
+        "jsx-a11y/no-static-element-interactions": "off",
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+
+    },
+    "overrides": [
+        {
+            "files": ["client/*.js", "client/*.jsx"]
+        }
+    ],
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "node": true,
+        "mocha": true
+    }
+}

@@ -1,0 +1,17 @@
+@import "./mixins/fonts";
+@import "./mixins/colors";
+@import "./mixins/breakpoints";
+@import "./mixins/border";
+@import "./mixins/shadow";
+@import "./mixins/input";
+
+@import "./Header/header";
+@import "./PageContent/page-content";
+@import "./Buttons/buttons";
+
+@import "./Common/common";
+
+a {
+    color: inherit;
+    text-decoration: none;
+} 

@@ -1,0 +1,15 @@
+.button-primary {
+    background-color: $color-background;
+    @include font-oswald(16px, white, 300);
+    cursor: pointer;
+    border-width: 0;
+    border-radius: 15px;
+}
+
+.button-secondary {
+    background-color: $color-secondary;
+    @include font-oswald(16px, white, 300);
+    cursor: pointer;
+    border-width: 0;
+    border-radius: 15px;
+}

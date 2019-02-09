@@ -1,0 +1,23 @@
+.header-container {
+    padding: 0.5em, 1em, 0.5em, 1em;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: $color-background;
+    @include font-oswald(32px, $color-white, 400);
+
+    @media screen and (max-width: $mobile) {
+        flex-direction: column;
+    }
+}
+
+.header-item {
+    margin: auto;
+    color: $color-white;
+
+    &--link {
+        @extend .header-item;
+        cursor: pointer;
+        color: $color-link;
+    }
+}

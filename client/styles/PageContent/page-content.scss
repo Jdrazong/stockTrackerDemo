@@ -1,0 +1,14 @@
+.page-container {
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+.page-content {
+    margin: 2em;
+}
+
+.page-content-header {
+    @include font-oswald(24px, $color-black, 400);
+    width: 100%;
+}
