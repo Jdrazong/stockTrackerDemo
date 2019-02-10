@@ -7,7 +7,7 @@ const {
     SET_COMPANY_NAME
 } = constants.types;
 
-describe('Checkout: reducers', () => {
+describe('TrackCompany: reducers', () => {
     it('should handle set company name', () => {
         expect(
             reducer({}, {
@@ -28,5 +28,18 @@ describe('Checkout: reducers', () => {
                 response
             }).matchingCompanies
         ).to.deep.equal(response);
+    });
+
+    it('should clear matchingCompanies after change in company name', () => {
+        expect(
+            reducer({
+                matchingCompany: ['test']
+            }, {
+                type: SET_COMPANY_NAME,
+                payload: {
+                    companyName: 'test'
+                }
+            }).matchingCompanies
+        ).to.deep.equal([]);
     });
 });

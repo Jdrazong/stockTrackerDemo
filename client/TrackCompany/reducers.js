@@ -17,6 +17,8 @@ const companyName = (state = '', action) => {
 
 const matchingCompanies = (state = [], action) => {
     switch (action.type) {
+    case SET_COMPANY_NAME:
+        return [];
     case FETCH_COMPANIES_SUCCESS:
         return action.response;
     default:

@@ -51,3 +51,18 @@
     margin-right: 2em;
     white-space: nowrap;
 }
+
+.track-company-track-button {
+    width: 10em;
+    margin-left: 2em;
+
+    @media screen and (max-width: $mobile) {
+        width: 100%;
+        margin: 2em 0 0 0;
+    }
+}
+
+.track-company-tracked-message {
+    width: 100%;
+    @include font-oswald(18px, $color-secondary, 400);
+}

@@ -1,26 +1,17 @@
 import React from 'react';
 import { messages } from 'shared';
+import MatchingCompany from './MatchingCompany';
 
 const MatchingCompanies = ({ matchingCompanies }) => Boolean(matchingCompanies.length) && (
     <div>
         <div className="page-content-header">{messages.trackCompany.matchingCompaniesSectionHeader}</div>
         <div className="track-company-matching-companies-container">
-            {matchingCompanies.map(company => (
-                <div
-                    key={company.symbol}
-                    className="track-company-matching-company-container"
-                >
-                    {Object.keys(company).map(
-                        key => (
-                            <div
-                                key={`${company.symbol}${key}`}
-                                className="track-company-matching-company-property"
-                            >
-                                { `${key}: ${company[key]}` }
-                            </div>
-                        )
-                    )}
-                </div>
+            {matchingCompanies.map(({ alreadyTracked, ...company }) => (
+                <MatchingCompany
+                    key={company['1. symbol']}
+                    company={company}
+                    alreadyTracked={alreadyTracked}
+                />
             ))}
         </div>
     </div>
