@@ -2,6 +2,7 @@ import React from 'react';
 import { components, messages } from 'shared';
 import TrackCompanyInputContainer from './TrackCompanyInputContainer';
 import FetchCompaniesButtonContainer from './FetchCompaniesButtonContainer';
+import MatchingCompaniesContainer from './MatchingCompaniesContainer';
 
 const { Content } = components;
 
@@ -12,6 +13,7 @@ const TrackCompany = () => (
             <TrackCompanyInputContainer />
             <FetchCompaniesButtonContainer />
         </div>
+        <MatchingCompaniesContainer />
     </Content>
 );
 

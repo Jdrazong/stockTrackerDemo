@@ -1,14 +1,53 @@
 .track-company-input-container {
+    @include section-mixin;
     display: flex;
     flex-direction: row;
     width: 100%;
+
+    @media screen and (max-width: $mobile) {
+        flex-direction: column;
+    }
 }
 
 .track-company-input {
     @include input-mixin;
+    width: 20em;
+
+    @media screen and (max-width: $mobile) {
+        width: 100%;
+    }
 }
 
 .track-company-button {
     width: 10em;
     margin-left: 2em;
+
+    @media screen and (max-width: $mobile) {
+        width: 100%;
+        margin: 2em 0 0 0;
+    }
+}
+
+.track-company-matching-companies-container{
+    @include section-mixin;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.track-company-matching-company-container {
+    @include border-mixin;
+    @include font-oswald(16px, $color-black, 400);
+    @include shadow-mixin;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: calc(100% - 2em);
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+.track-company-matching-company-property {
+    margin-right: 2em;
+    white-space: nowrap;
 }

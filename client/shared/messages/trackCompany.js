@@ -1,4 +1,5 @@
 export default {
     header: 'Track Company',
-    trackCompanyButton: 'Track'
+    trackCompanyButton: 'Track',
+    matchingCompaniesSectionHeader: 'Companies matching search criteria'
 };
