@@ -1,3 +1,5 @@
 node_modules/
 build/bundle.js
 public/bundle.js
+.vs/
+package-lock.json
