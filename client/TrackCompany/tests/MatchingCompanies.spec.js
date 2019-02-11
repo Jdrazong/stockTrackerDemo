@@ -2,8 +2,8 @@ import React from 'react';
 import { expect } from 'chai';
 import { shallow } from 'enzyme';
 import { messages } from 'shared';
-import MatchingCompany from './MatchingCompany';
-import MatchingCompanies from './MatchingCompanies';
+import MatchingCompany from '../MatchingCompany';
+import MatchingCompanies from '../MatchingCompanies';
 
 describe('TrackCompany: MatchingCompanies', () => {
     const props = {

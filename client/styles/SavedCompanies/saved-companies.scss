@@ -1,0 +1,89 @@
+.saved-companies-list-container {
+    @include section-mixin;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.saved-companies-company-container {
+    @include border-mixin;
+    @include shadow-mixin;
+    margin-right: 2em;
+    max-width: 40em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: calc(100% - 2em);
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+.saved-companies-image-container {
+    height: 64px;
+    width: 64px;
+    margin-right: 4em;
+}
+
+.saved-companies-image {
+    height: 100%;
+    width: 100%;
+}
+
+.saved-companies-company-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.saved-companies-company-properties-container {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.saved-companies-company-name {
+    @include font-oswald(20px, $color-black, 400);
+}
+
+.saved-companies-company-property {
+    @include font-oswald(16px, $color-black, 300);
+    margin: 0.4em;
+}
+
+.saved-companies-company-link {
+    @include font-oswald(16px, $color-black, 300);
+    margin: 0.4em;
+    color: $color-link
+}
+
+.saved-companies-company-price {
+    @include font-oswald(16px, $color-black, 400);
+    margin-top: 0.4em;
+}
+
+.saved-companies-company-currency {
+    @include font-oswald(16px, $color-black, 300);
+    margin: 0.4em;
+}
+
+.saved-company-positive-change {
+    @include font-oswald(16px, $color-green, 300);
+    margin: 0.4em;
+}
+
+.saved-company-negative-change {
+    @include font-oswald(16px, $color-red, 300);
+    margin: 0.4em;
+}
+
+.saved-companies-delete-company-button {
+    width: 20em;
+    margin-left: 2em;
+    
+    @media screen and (max-width: $mobile) {
+        width: 100%;
+        margin: 2em 0 0 0;
+    }
+}

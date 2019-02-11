@@ -1,6 +1,6 @@
 import { expect } from 'chai';
-import reducer from './reducers';
-import * as constants from './constants';
+import reducer from '../reducers';
+import * as constants from '../constants';
 
 const {
     FETCH_COMPANIES,

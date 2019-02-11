@@ -2,9 +2,9 @@ import React from 'react';
 import { expect } from 'chai';
 import { shallow } from 'enzyme';
 import { components, messages } from 'shared';
-import TrackCompanyInputContainer from './TrackCompanyInputContainer';
-import FetchCompaniesButtonContainer from './FetchCompaniesButtonContainer';
-import TrackCompany from './TrackCompany';
+import TrackCompanyInputContainer from '../TrackCompanyInputContainer';
+import FetchCompaniesButtonContainer from '../FetchCompaniesButtonContainer';
+import TrackCompany from '../TrackCompany';
 
 const {
     Content

@@ -2,8 +2,8 @@ import React from 'react';
 import { expect } from 'chai';
 import { shallow } from 'enzyme';
 import { messages } from 'shared';
-import MatchingCompany from './MatchingCompany';
-import TrackCompanyButtonContainer from './TrackCompanyButtonContainer';
+import MatchingCompany from '../MatchingCompany';
+import TrackCompanyButtonContainer from '../TrackCompanyButtonContainer';
 
 describe('TrackCompany: MatchingCompany', () => {
     const props = {

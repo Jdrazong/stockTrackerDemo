@@ -7,7 +7,6 @@ const withLoader = WrappedComponent => ({ isLoading, ...props }) => (
         {isLoading ? (
             <div className="loader-container">
                 <img className="loader" src={loader} alt="loader" />
-                <WrappedComponent {...props} />
             </div>
         ) : null}
     </div>
