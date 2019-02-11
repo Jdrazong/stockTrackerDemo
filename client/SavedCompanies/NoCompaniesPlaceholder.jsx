@@ -7,7 +7,7 @@ import {
 
 const NoCompaniesPlaceholder = () => (
     <div className="saved-companies-no-companies-container">
-        <p>{messages.savedCompanies.noCompanies}</p>
+        <p className="saved-companies-no-companies-placeholder">{messages.savedCompanies.noCompanies}</p>
         <Link
             className="saved-companies--link"
             to={HOME_LINK}

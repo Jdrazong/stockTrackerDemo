@@ -87,3 +87,16 @@
         margin: 2em 0 0 0;
     }
 }
+
+.saved-companies--link {
+    @include font-oswald(20px, $color-red, 300);
+    margin: 0.4em;
+    color: $color-link;
+    cursor: pointer;
+}
+
+.saved-companies-no-companies-placeholder {
+    @include font-oswald(20px, $color-red, 400);
+    margin: 0.4em;
+    color: $color-black;
+}
